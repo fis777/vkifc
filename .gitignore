@@ -1,3 +1,4 @@
 vkifc/__pycache__/*
 vkinit/__pycache__/*
+vkinit/migrations/__pycache__/*
 vkifc.db.sqlite3
