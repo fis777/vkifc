@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", 'q&$vv_aa578idqqar9*i(5@g+y4+e*
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = bool(os.environ.get("DJANGO_DEBUG"), True)
+DEBUG = bool(os.environ.get("DJANGO_DEBUG", True))
 
 
 ALLOWED_HOSTS = []
@@ -131,3 +131,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]

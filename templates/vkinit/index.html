@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block stylesheet %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'vkinit/css/styles.css' %}">
+{% endblock stylesheet %}
+
 {% block content %}
-    <p>Hello work</p>
+    <p class="hello">Hello work</p>
 {% endblock content %}
