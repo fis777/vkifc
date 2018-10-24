@@ -134,3 +134,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+ALLOWED_HOSTS = ['polar-brushlands-55337.herokuapp.com','127.0.0.1']
